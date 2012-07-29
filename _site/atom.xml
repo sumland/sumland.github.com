@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Tom Preston-Werner</title>
+ <link href="http://tom.preston-werner.com/atom.xml" rel="self"/>
+ <link href="http://tom.preston-werner.com/"/>
+ <updated>2012-07-29T16:53:33+08:00</updated>
+ <id>http://tom.preston-werner.com/</id>
+ <author>
+   <name>Tom Preston-Werner</name>
+   <email>tom@mojombo.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Open Source (Almost) Everything</title>
+   <link href="http://tom.preston-werner.com/2011/11/22/open-source-everything.html"/>
+   <updated>2011-11-22T00:00:00+08:00</updated>
+   <id>http://tom.preston-werner.com/2011/11/22/open-source-everything</id>
+   <content type="html">&lt;h1&gt;Open Source (Almost) Everything&lt;/h1&gt;
+
+&lt;p class=&quot;meta&quot;&gt;22 Nov 2011 - San Francisco&lt;/p&gt;
+
+
+&lt;p&gt;When Chris and I first started working on GitHub in late 2007, we split the work into two parts. Chris worked on the Rails app and I worked on Grit, the first ever Git bindings for Ruby. After six months of development, Grit had become complete enough to power GitHub during our public launch of the site and we were faced with an interesting question:&lt;/p&gt;
+
+&lt;p&gt;Should we open source Grit or keep it proprietary?&lt;/p&gt;
+
+&lt;p&gt;Keeping it private would provide a higher hurdle for competing Ruby-based Git hosting sites, giving us an advantage. Open sourcing it would mean thousands of people worldwide could use it to build interesting Git tools, creating an even more vibrant Git ecosystem.&lt;/p&gt;
+
+&lt;p&gt;After a small amount of debate we decided to open source Grit. I don't recall the specifics of the conversation but that decision nearly four years ago has led to what I think is one of our most important core values: open source (almost) everything.&lt;/p&gt;
+
+&lt;h2&gt;Why is it awesome to open source (almost) everything?&lt;/h2&gt;
+
+&lt;p&gt;If you do it right, open sourcing code is &lt;strong&gt;great advertising&lt;/strong&gt; for you and your company. At GitHub we like to talk publicly about libraries and systems we've written that are still closed but destined to become open source. This technique has several advantages. It helps determine what to open source and how much care we should put into a launch. We recently open sourced Hubot, our chat bot, to widespread delight. Within two days it had 500 watchers on GitHub and 409 upvotes on Hacker News. This translates into goodwill for GitHub and more superfans than ever before.&lt;/p&gt;
+
+&lt;p&gt;If your code is popular enough to attract outside contributions, you will have created a &lt;strong&gt;force multiplier&lt;/strong&gt; that helps you get more work done faster and cheaper. More users means more use cases being explored which means more robust code. Our very own &lt;a href=&quot;https://github.com/defunkt/resque&quot;&gt;resque&lt;/a&gt; has been improved by 115 different individuals outside the company, with hundreds more providing 3rd-party plugins that extend resque's functionality. Every bug fix and feature that you merge is time saved and customer frustration avoided.&lt;/p&gt;
+
+&lt;p&gt;Smart people like to hang out with other smart people. Smart developers like to hang out with smart code. When you open source useful code, you &lt;strong&gt;attract talent&lt;/strong&gt;. Every time a talented developer cracks open the code to one of your projects, you win. I've had many great conversations at tech conferences about my open source code. Some of these encounters have led to ideas that directly resulted in better solutions to problems I was having with my projects. In an industry with such a huge range of creativity and productivity between developers, the right eyeballs on your code can make a big difference.&lt;/p&gt;
+
+&lt;p&gt;If you're hiring, &lt;strong&gt;the best technical interview possible&lt;/strong&gt; is the one you don't have to do because the candidate is already kicking ass on one of your open source projects. Once technical excellence has been established in this way, all that remains is to verify cultural fit and convince that person to come work for you. If they're passionate about the open source code they've been writing, and you're the kind of company that cares about well-crafted code (which clearly you are), that should be simple! We hired &lt;a href=&quot;https://github.com/tanoku&quot;&gt;Vicent Martí&lt;/a&gt; after we saw him doing stellar work on &lt;a href=&quot;https://github.com/libgit2/libgit2&quot;&gt;libgit2&lt;/a&gt;, a project we're spearheading at GitHub to extract core Git functionality into a standalone C library. No technical interview was necessary, Vicent had already proven his skills via open source.&lt;/p&gt;
+
+&lt;p&gt;Once you've hired all those great people through their contributions, dedication to open source code is an amazingly effective way to &lt;strong&gt;retain that talent&lt;/strong&gt;. Let's face it, great developers can take their pick of jobs right now. These same developers know the value of coding in the open and will want to build up a portfolio of projects they can show off to their friends and potential future employers. That's right, a paradox! In order to keep a killer developer happy, you have to help them become more attractive to other employers. But that's ok, because that's exactly the kind of developer you want to have working for you. So relax and let them work on open source or they'll go somewhere else where they can.&lt;/p&gt;
+
+&lt;p&gt;When I start a new project, I assume it will eventually be open sourced (even if it's unlikely). This mindset leads to &lt;strong&gt;effortless modularization&lt;/strong&gt;. If you think about how other people outside your company might use your code, you become much less likely to bake in proprietary configuration details or tightly coupled interfaces. This, in turn, leads to cleaner, more maintainable code. Even internal code should pretend to be open source code.&lt;/p&gt;
+
+&lt;p&gt;Have you ever written an amazing library or tool at one job and then left to join another company only to rewrite that code or remain miserable in its absence? I have, and it sucks. By getting code out in the public we can drastically &lt;strong&gt;reduce duplication of effort&lt;/strong&gt;. Less duplication means more work towards things that matter.&lt;/p&gt;
+
+&lt;p&gt;Lastly, &lt;strong&gt;it's the right thing to do&lt;/strong&gt;. It's almost impossible to do anything these days without directly or indirectly executing huge amounts of open source code. If you use the internet, you're using open source. That code represents millions of man-hours of time that has been spent and then given away so that everyone may benefit. We all enjoy the benefits of open source software, and I believe we are all morally obligated to give back to that community. If software is an ocean, then open source is the rising tide that raises all ships.&lt;/p&gt;
+
+&lt;h2&gt;Ok, then what shouldn't I open source?&lt;/h2&gt;
+
+&lt;p&gt;That's easy. Don't open source anything that represents core business value.&lt;/p&gt;
+
+&lt;p&gt;Here are some examples of what we don't open source and why:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Core GitHub Rails app (easier to sell when closed)&lt;/li&gt;
+&lt;li&gt;The Jobs Sinatra app (specially crafted integration with github.com)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Here are some examples of things we do open source and why:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Grit (general purpose Git bindings, useful for building many tools)&lt;/li&gt;
+&lt;li&gt;Ernie (general purpose BERT-RPC server)&lt;/li&gt;
+&lt;li&gt;Resque (general purpose job processing)&lt;/li&gt;
+&lt;li&gt;Jekyll (general purpose static site generator)&lt;/li&gt;
+&lt;li&gt;Gollum (general purpose wiki app)&lt;/li&gt;
+&lt;li&gt;Hubot (general purpose chat bot)&lt;/li&gt;
+&lt;li&gt;Charlock_Holmes (general purpose character encoding detection)&lt;/li&gt;
+&lt;li&gt;Albino (general purpose syntax highlighting)&lt;/li&gt;
+&lt;li&gt;Linguist (general purpose filetype detection)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Notice that everything we keep closed has specific business value that could be compromised by giving it away to our competitors. Everything we open is a general purpose tool that can be used by all kinds of people and companies to build all kinds of things.&lt;/p&gt;
+
+&lt;h2&gt;What is the One True License?&lt;/h2&gt;
+
+&lt;p&gt;I prefer the MIT license and almost everything we open source at GitHub carries this license. I love this license for several reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;It's short. Anyone can read this license and understand exactly what it means without wasting a bunch of money consulting high-octane lawyers.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Enough protection is offered to be relatively sure you won't sue me if something goes wrong when you use my code.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Everyone understands the legal implications of the MIT license. Weird licenses like the WTFPL and the Beer license pretend to be the &quot;ultimate in free licenses&quot; but utterly fail at this goal. These fringe licenses are too vague and unenforceable to be acceptable for use in some companies. On the other side, the GPL is too restrictive and dogmatic to be usable in many cases. I want everyone to benefit from my code. Everyone. That's what Open should mean, and that's what Free should mean.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Rad, how do I get started?&lt;/h2&gt;
+
+&lt;p&gt;Easy, just flip that switch on your GitHub repository from private to public and tell the world about your software via your blog, Twitter, Hacker News, and over beers at your local pub. Then sit back, relax, and enjoy being part of something big.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://news.ycombinator.com/item?id=3267432&quot;&gt;Discuss this post on Hacker News&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rejected Bio from The Setup</title>
+   <link href="http://tom.preston-werner.com/2011/05/03/rejected-bio-from-the-setup.html"/>
+   <updated>2011-05-03T00:00:00+08:00</updated>
+   <id>http://tom.preston-werner.com/2011/05/03/rejected-bio-from-the-setup</id>
+   <content type="html">&lt;h1&gt;Rejected Bio from The Setup&lt;/h1&gt;
+
+&lt;p class=&quot;meta&quot;&gt;03 May 2011 - San Francisco&lt;/p&gt;
+
+
+&lt;p&gt;Yesterday, &lt;a href=&quot;http://tom.preston-werner.usesthis.com/&quot;&gt;the autobiographical post I wrote for The
+Setup&lt;/a&gt; went live. I wrote that post
+over a year ago and then entered into an epic battle with
+&lt;a href=&quot;http://twitter.com/#!/waferbaby&quot;&gt;@waferbaby&lt;/a&gt; about the length of my &quot;Who are
+you, and what do you do?&quot; section. He said it was too long. I said it could
+not be shortened. And so the post sat for a year, collecting dust, neither of
+us prepared to back down.&lt;/p&gt;
+
+&lt;p&gt;About a month ago I decided that it was foolish to let the words I had written rot on my hard drive and so I did the only thing I knew how to do: overreact. So I cut the original nine-hundred words of my bio down to fourteen words and resubmitted it to Daniel. Those are the words you see in the post now.&lt;/p&gt;
+
+&lt;p&gt;For your pleasure, here is the original bio in its full, unabridged glory.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+
+&lt;p&gt;My name is Tom Preston-Werner. I find that the hyphenated last name
+makes me sound distinguished and worth listening to. I grew up three
+decades ago in a small city in Iowa along the Mississippi, which means
+I shucked a lot of corn and know exactly how many mosquitos will land
+on your arm should you hold it still for ten minutes at dusk on the
+muggiest day of the summer. As an aspiring theoretical particle
+physicist, I worked my way through entire shelves of scientific
+literature from the public library, desperately wanting to understand
+the bewildering mathematics that littered the pages like so many
+leaves on the bottom of that morning's cup of green tea. I searched in
+vain for instructors or classmates that could provide me with the
+insight necessary to comprehend the true meaning of Heisenberg's
+Uncertainty Principle, but all I found were underpaid math teachers
+and disillusioned &quot;students&quot; in search of their next smoke break.
+After obsessing over US News' Best Colleges reports for months I
+finally chose and was accepted to Harvey Mudd, a tiny engineering
+school in California famous for assigning the greatest number of hours
+of homework per night. This sounded just perfect to me. Finally a
+place I could bring up the EPR Paradox and not be immediately
+stigmatized as &quot;that science weirdo with the hilariously thick glasses
+and unfortunate hairdo.&quot;&lt;/p&gt;
+
+&lt;p&gt;Mudd did not disappoint. But now I had the opposite problem. In order
+to properly understand particle physics, you must have a deep and
+profound love of math. You have to be so comfortable with abstract
+concepts that even Picasso would be jealous. Ironically, in order to
+grasp the fundamental reality of our universe, you must forget about
+the &quot;reality&quot; of everyday life and start living in a world comprised
+of eigenvectors, Hilbert spaces, and Planck's constant. This was a
+leap I could not make. I like math, but I'm too easily distracted by
+macroscopic reality to make it my profession.&lt;/p&gt;
+
+&lt;p&gt;Once I accepted that I would never spend late nights poring over
+bubble chamber printouts at Fermilab, it became obvious that I was
+destined to enter computer science. I started programming in BASIC on
+a TRS-80 that my dad bought from Radio Shack when I was 8 years old.
+Since then, I'd learned to love the discipline and creativity involved
+in making a machine do my bidding. It was like having a super-obedient
+but annoyingly logical little brother. He'll do anything you want as
+long as you tell him in precise and unambiguous language. The best
+thing is, the feedback is immediate. In physics, it can take twenty
+years to prove that a single esoteric particle even exists. When
+you're writing a program that displays the number of electrons in each
+of the shells around the nucleus of every element, the feedback is
+immediate and intoxicating. With just a few keystrokes, the world is
+changed forever. Try to get that kind of rush even once in a lifetime
+as a theoretical particle physicist. I dare you.&lt;/p&gt;
+
+&lt;p&gt;In 1999, after two years of college, I dropped out of Harvey Mudd to
+join a startup with some friends that were graduating. It was the end
+of the first dot-com bubble and I thought I could strike it rich,
+right then and there. Sadly, like so many startups of the day, we
+never accomplished what we envisioned and I ended up bouncing between
+jobs and consulting gigs for six years until I found myself in San
+Francisco. If Harvey Mudd was my mecca for physicists, then San
+Francisco was my mecca for programmers. Where else can you be grabbing
+lunch at a taqueria and overhear a group at the next table discussing
+the finer points of optimizing C code to run on an embedded processor?&lt;/p&gt;
+
+&lt;p&gt;I moved to San Francisco to take a job as a Ruby developer with a
+Wikipedia search engine called Powerset. I also began attending Ruby
+meetups and drinking with local software developers. There are a lot
+of talented people in the Bay Area and I wanted to meet them all.
+Within the Ruby community, a distributed version control system called
+Git was starting to get some attention. It was a really cool way of
+working with other people on code, but there wasn't an easy way to get
+up and running with a group of developers. Along with cofounders Chris
+Wanstrath and PJ Hyett (who I met at the Ruby meetups) I started a
+company called GitHub that would address this problem and make it dead
+simple to share Git repositories and collaborate on code with other
+developers.&lt;/p&gt;
+
+&lt;p&gt;At first, we worked on GitHub on the side, putting in time on evenings
+and weekends. After six months we launched the site to the public and
+started charging. Not long after that, Powerset was acquired by
+Microsoft and I was faced with a choice: stay on as a Microsoft
+employee with a big retention bonus and give up GitHub or turn down
+the Microsoft money and quit Powerset to work on GitHub full-time. You
+can read more about this saga in my blog post entitled &lt;a href=&quot;http://tom.preston-werner.com/2008/10/18/how-i-turned-down-300k.html&quot;&gt;How I Turned
+Down $300,000 from Microsoft to go Full-Time on
+GitHub&lt;/a&gt;.
+I think I made the right decision.&lt;/p&gt;
+
+&lt;p&gt;Today GitHub has twenty-nine employees and more than 730,000 users with over
+2,000,000 repositories. We're growing fast, and I'm having the time of
+my life!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Ten Lessons from GitHub's First Year</title>
+   <link href="http://tom.preston-werner.com/2011/03/29/ten-lessons-from-githubs-first-year.html"/>
+   <updated>2011-03-29T00:00:00+08:00</updated>
+   <id>http://tom.preston-werner.com/2011/03/29/ten-lessons-from-githubs-first-year</id>
+   <content type="html">&lt;h1&gt;Ten Lessons from GitHub&amp;#8217;s First Year&lt;/h1&gt;
+&lt;p class=&quot;meta&quot;&gt;29 Mar 2011 / 29 Dec 2008 &amp;#8211; San Francisco&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;span class=&quot;caps&quot;&gt;NOTE&lt;/span&gt;: This post was written in late December of 2008, more than two years ago. It has stayed in my drafts folder since then, waiting for the last 2% to be written. Why I never published it is beyond my reckoning, but it serves as a great reminder of how I perceived the world back then. In the time since I wrote this we&amp;#8217;ve grown from four people to twenty-six, settled into an office, installed a kegerator, and still never taken outside funding. In some ways, things have changed a great deal, but in the most important ways, things are still exactly the same. Realizing this puts a big smile on my face.&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;The end of the year is a great time to sit down with a glass of your favorite beverage, dim the lights, snuggle up next to the fire and think about what you&amp;#8217;ve learned over the past twelve months.&lt;/p&gt;
+&lt;p&gt;For me, 2008 was the year that I helped design, develop, and launch GitHub. Creating a new startup is an intense learning experience. Through screwups and triumphs, I have learned some valuable lessons this year. Here&amp;#8217;s a few of them.&lt;/p&gt;
+&lt;h2&gt;Start Early&lt;/h2&gt;
+&lt;p&gt;When Chris and I started working on GitHub in late 2007, Git was largely unknown as a version control system. Sure, Linux kernel hackers had been using it since day one, but outside of that small microcosm, it was rare to come across a developer that was using it on a day-to-day basis. I was first introduced to Git by Dave Fayram, a good friend and former coworker during my days at Powerset. Dave is the quintessential early adopter and, as far as I can calculate, patient zero for the spread of Git adoption in the Ruby community and beyond.&lt;/p&gt;
+&lt;p&gt;Back then, the Git landscape was pretty barren. Git had only recently become  usable by normal people with the 1.5 release. As for Git hosting, there was really only &lt;a href=&quot;http://repo.or.cz/&quot;&gt;repo.or.cz&lt;/a&gt;, which felt to me very limited, clumsy, and poorly designed. There were no commercial Git hosting options whatsoever. Despite this, people were starting to talk about Git at the Ruby meetups. About how awesome it was. But something was amiss. Git was supposed to be this amazing way to work on code in a distributed way, but what was the mechanism to securely share private code? Your only option was to setup user accounts on Unix machines and use that as an ad-hoc solution. Not ideal.&lt;/p&gt;
+&lt;p&gt;And so GitHub was born. But it was born into a world where there was no existing market for paid Git hosting. We would be &lt;em&gt;creating&lt;/em&gt; the market. I vividly remember telling people, &amp;#8220;I don&amp;#8217;t expect GitHub to succeed right away. Git adoption will take a while, but we&amp;#8217;ll be ready when it happens.&amp;#8221; Neither Chris nor I were in any particular hurry for this to happen. I was working full time at Powerset, and he was making good money as a Rails consultant. By choosing to build early on top of a nascent technology, we were able to construct a startup with basically no overhead, no competition, and in our free time.&lt;/p&gt;
+&lt;h2&gt;Adapt to Your Customers&lt;/h2&gt;
+&lt;p&gt;Here&amp;#8217;s a seemingly paradoxical piece of advice for you: Listen to your customers, but don&amp;#8217;t let them tell you what to do. Let me explain. Consider a feature request such as &amp;#8220;GitHub should let me &lt;span class=&quot;caps&quot;&gt;FTP&lt;/span&gt; up a documentation site for my project.&amp;#8221; What this customer is really trying to say is &amp;#8220;I want a simple way to publish content related to my project,&amp;#8221; but they&amp;#8217;re used to what&amp;#8217;s already out there, and so they pose the request in terms that are familiar to them. We could have implemented some horrible &lt;span class=&quot;caps&quot;&gt;FTP&lt;/span&gt; based solution as requested, but we looked deeper into the underlying question and now we allow you to publish content by simply pushing a Git repository to your account. This meets requirements of both functionality &lt;em&gt;and&lt;/em&gt; elegance.&lt;/p&gt;
+&lt;p&gt;Another company that understands this concept at a fundamental level is Apple. I&amp;#8217;m sure plenty of people asked Apple to make a phone but Steve Jobs and his posse looked beneath the request and figured out what people really wanted: a nice looking, simple to use, and easy to sync mobile device that kicked some serious ass. And that&amp;#8217;s the secret. Don&amp;#8217;t give your customers what they ask for; give them what they &lt;em&gt;want&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;Have Fun&lt;/h2&gt;
+&lt;p&gt;I went to college at a little school in California called Harvey Mudd. Yeah, I know you haven&amp;#8217;t heard of it, but if you remember those US News &amp;amp; World Report &amp;#8220;Best Colleges&amp;#8221; books that you obsessed over in highschool (ok, maybe you didn&amp;#8217;t, but I did), Harvey Mudd was generally ranked as the engineering school with the greatest number of hours of homework per night. Yes, more than &lt;span class=&quot;caps&quot;&gt;MIT&lt;/span&gt;, and yes, more than Caltech. It turned out to be true, as far as I can tell. I have fond memories of freaking out about ridiculously complex spring/mass/damper systems and figuring the magnetic flux of a wire wrapped around a cylinder in a double helix. We studied hard&amp;#8212;very hard. But we played hard too. It was the only thing that could possibly keep us sane.&lt;/p&gt;
+&lt;p&gt;Working on a startup is like that. It feels a bit like college. You&amp;#8217;re working on insanely hard projects, but you&amp;#8217;re doing it with your best friends in the world and you&amp;#8217;re having a great time (usually). In both environments, you have to goof off a lot in order to balance things out. Burnout is a real and dangerous phenomenon. Fostering a playful and creative environment is critical to maintaining both your personal health, and the health (and idea output) of the company.&lt;/p&gt;
+&lt;h2&gt;Pay attention to Twitter&lt;/h2&gt;
+&lt;p&gt;I&amp;#8217;ve found Twitter to be an extremely valuable resource for instant feedback. If the site is slow for some reason, Twitter will tell me so. If the site is unreachable for people in a certain country (I&amp;#8217;m looking at you China), I&amp;#8217;ll find out via Twitter. If that new feature we just released is really awesome, I&amp;#8217;ll get a nice ego boost by scanning the Twitter search.&lt;/p&gt;
+&lt;p&gt;People have a tendency to turn to Twitter to bitch about all the little bugs they see on your website, usually appended with the very tiresome &amp;#8220;&lt;span class=&quot;caps&quot;&gt;FAIL&lt;/span&gt;&amp;#8221;. These are irksome to read, but added together are worth noticing. Often times these innocent tweets will inform a decision about whether an esoteric bug is worth adding to the short list. We also created a GitHub account on Twitter that our support guy uses to respond to negative tweets. Offering this level of customer service almost always turns a disgruntled customer into a happy one.&lt;/p&gt;
+&lt;p&gt;If you have an iPhone, I heartily recommend the &lt;a href=&quot;http://fanzter.com/products/download/summizer&quot;&gt;Summizer&lt;/a&gt; app from Fanzter, Inc. It makes searching, viewing, and responding to tweets a cinch.&lt;/p&gt;
+&lt;h2&gt;Deploy at Will!&lt;/h2&gt;
+&lt;p&gt;At the first RailsConf I had the pleasure of hearing Martin Fowler deliver an amazing keynote. He made some apt metaphors regarding agile development that I will now paraphrase and mangle.&lt;/p&gt;
+&lt;p&gt;Imagine you&amp;#8217;re tasked with building a computer controlled gun that can accurately hit a target about 50 meters distant. That is the only requirement. One way to do this is to build a complex machine that measures every possible variable (wind, elevation, temperature, etc.) before the shot and then takes aim and shoots. Another approach is to build a simple machine that fires rapidly and can detect where each shot hits. It then uses this information to adjust the aim of the next shot, quickly homing in on the target a little at a time.&lt;/p&gt;
+&lt;p&gt;The difference between these two approaches is to realize that bullets are cheap. By the time the former group has perfected their wind detection instrument, you&amp;#8217;ll have finished your simple weapon and already hit the target.&lt;/p&gt;
+&lt;p&gt;In the world of web development, the target is your ideal offering, the bullets are your site deploys, and your customers provide the feedback mechanism. The first year of a web offering is a magical one. Your customers are most likely early adopters and love to see new features roll out every few weeks. If this results in a little bit of downtime, they&amp;#8217;ll easily forgive you, as long as those features are sweet. In the early days of GitHub, we&amp;#8217;d deploy up to ten times in one afternoon, always inching closer to that target.&lt;/p&gt;
+&lt;p&gt;Make good use of that first year, because once the big important customers start rolling in, you have to be a lot more careful about hitting one of them with a stray bullet. Later in the game, downtime and botched deploys are money lost and you have to rely more on building instruments to predict where you should aim.&lt;/p&gt;
+&lt;h2&gt;You Don&amp;#8217;t Need an Office&lt;/h2&gt;
+&lt;p&gt;All four fulltime GitHub employees work in the San Francisco area, and yet we have no office. But we&amp;#8217;re not totally virtual either. In fact, a couple times a week you&amp;#8217;ll find us at a cafe in North Beach, huddled around a square table that was made by nailing 2&amp;#215;4s to an ancient fold-out bulletin board. It&amp;#8217;s no Google campus, but the rent is a hell of a lot cheaper and the drinks are just as good!&lt;/p&gt;
+&lt;p&gt;This is not to say that we haven&amp;#8217;t looked at a few places to call home. Hell, we almost leased an old bar. But in the end there&amp;#8217;s no hurry to settle down. We&amp;#8217;re going to wait until we find the perfect office. Until then, we can invest the savings back into the company, or into our pockets. For now, I like my couch and the cafe just fine.&lt;/p&gt;
+&lt;p&gt;Of course, none of this would be possible without 37signals&amp;#8217; &lt;a href=&quot;http://www.campfirenow.com/&quot;&gt;Campfire&lt;/a&gt; web-based chat and the very-difficult-to-find-but-totally-amazing &lt;a href=&quot;http://productblog.37signals.com/products/2008/10/propane-takes-c.html&quot;&gt;Propane&lt;/a&gt; &lt;span class=&quot;caps&quot;&gt;OSX&lt;/span&gt; desktop app container that doubles the awesome. Both highly recommended.&lt;/p&gt;
+&lt;h2&gt;Hire Through Open Source&lt;/h2&gt;
+&lt;p&gt;Beyond the three cofounders of GitHub, we&amp;#8217;ve hired one full time developer (Scott Chacon) and one part time support specialist (Tekkub).&lt;/p&gt;
+&lt;p&gt;We hired Tekkub because he was one of the earliest GitHub users and actively maintains more than 75 projects (WoW addons mostly) on GitHub and was very active in sending us feedback in the early days. He would even help people out in the &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; channel, simply because he enjoyed doing so.&lt;/p&gt;
+&lt;p&gt;I met Scott at one of the San Francisco Ruby meetups where he was presenting on one of his myriad Git-centric projects. Scott had been working with Git long before anyone else in the room. He was also working on a pure Ruby implementation of Git at the same time I was working on my fork/exec based Git bindings. It was clear to me then that depending on how things went down, he could become either a powerful ally or a dangerous foe. Luckily, we all went drinking afterwards and we became friends. Not long after, Scott started consulting for us and wrote the entire backend for what you now know of as &lt;a href=&quot;http://gist.github.com/&quot;&gt;Gist&lt;/a&gt;. We knew then that we would do whatever it took to hire Scott full time. There would be no need for an interview or references. We already knew everything we needed to know in order to make him an offer without the slightest reservation.&lt;/p&gt;
+&lt;p&gt;The lesson here is that it&amp;#8217;s far easier and less risky to hire based on relevant past performance than it is to hire based on projected future performance. There&amp;#8217;s a corollary that also comes into play: if you&amp;#8217;re looking to work for a startup (or anyone for that matter), contribute to the community that surrounds it. Use your time and your code to prove that you&amp;#8217;re the best one for the job.&lt;/p&gt;
+&lt;h2&gt;Trust your Team&lt;/h2&gt;
+&lt;p&gt;There&amp;#8217;s nothing I hate more than micromanagers. When I was doing graphic design consulting 5 years ago I had a client that was very near the Platonic form of a micromanager. He insisted that I travel to his office where I would sit in the back room at an old Mac and design labels and catalogs and touch up photographs of swimwear models (that part was not so bad!). While I did these tasks he would hover over me and bark instructions. &amp;#8220;Too red! Can you make that text smaller? Get rid of those blemishes right there!&amp;#8221; It drove me absolutely batty.&lt;/p&gt;
+&lt;p&gt;This client could have just as easily given me the task at the beginning of the day, gone and run the business, and come back in 6 hours whereupon I would have created better designs twice as fast as if he were treating me like a robot that converted his speech into Photoshop manipulations. By treating me this way, he was marginalizing my design skills and wasting both money and talent.&lt;/p&gt;
+&lt;p&gt;Micromanagement is symptomatic of a lack of trust. The remedy for this ailment is to hire experts and then trust their judgment. In a startup, you can drastically reduce momentum by applying micromanagement, or you can boost momentum by giving trust. It&amp;#8217;s pretty amazing what can happen when a group of talented people who trust each other get together and decide to make something awesome.&lt;/p&gt;
+&lt;h2&gt;You Don&amp;#8217;t Need Venture Capital&lt;/h2&gt;
+&lt;p&gt;A lot has been written recently about how the venture capital world is changing. I don&amp;#8217;t pretend to be an expert on the subject, but I&amp;#8217;ve learned enough to say that a web startup like ours doesn&amp;#8217;t need any outside money to succeed. I know this because we haven&amp;#8217;t taken a single dime from investors. We bootstrapped the company on a few thousand dollars and became profitable the day we opened to the public and started charging for subscriptions.&lt;/p&gt;
+&lt;p&gt;In the end, every startup is different, and the only person that can decide if outside money makes sense is you. There are a million things that could drive you to seek and accept investment, but you should make sure that doing so is in your best interest, because it&amp;#8217;s quite possible that you don&amp;#8217;t &lt;em&gt;need&lt;/em&gt; to do so. One of the reasons I left my last job was so that I could say &amp;#8220;the buck stops here.&amp;#8221; If we&amp;#8217;d taken money, I would no longer be able to say that.&lt;/p&gt;
+&lt;h2&gt;Open Source Whatever You Can&lt;/h2&gt;
+&lt;p&gt;In order for GitHub to talk to Git repositories, I created the first ever Ruby Git bindings. Eventually, this library become quite complete and we were faced with a choice: Do we open source it or keep it to ourselves? Both approaches have benefits and drawbacks. Keeping it private means that the hurdle for competing Ruby-based Git hosting sites would be higher, giving us an advantage. But open sourcing it would mean that&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;span class=&quot;caps&quot;&gt;NOTE&lt;/span&gt;: This is where the post ended and remained frozen in carbonite until today. I intend to write a follow up post on our open source philosophy at GitHub in the near future. I&amp;#8217;m sure the suspense is killing you!&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://news.ycombinator.com/item?id=2384320&quot;&gt;Discuss this post on Hacker News&lt;/a&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>
